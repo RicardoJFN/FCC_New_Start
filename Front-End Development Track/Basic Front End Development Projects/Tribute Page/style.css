@@ -1,0 +1,51 @@
+#central_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    background-color: #43DDE5;
+}
+
+body{
+    background-color: #43E56A;
+}
+
+.intro{
+    font-family: "Comic Sans MS";
+}
+
+.thick-green-border{
+    border-color: greenyellow;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 30%;
+}
+
+#dog{
+    height: 350px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+}
+
+#cat{
+    height: 250px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+}
+
+#footer{
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+#header{
+    text-align: center;
+}
