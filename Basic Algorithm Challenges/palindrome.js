@@ -25,18 +25,28 @@ Here are some helpful links:
     [^a-zA-Z\d\s:]
 */
 
-function replacer(match, p3, offset, string) {
-    return [p3].join('');
-}
-
-var newString = "A man, a plan, a canal. Panama".replace(/([^a-zA-Z\d\s:])/);
-
 function palindrome(str) {
     
-
+    var strRegex = /[\W_]/g;
     
-    return str;
+    var formatedStr = str.toLowerCase('').replace(strRegex, '').split('');
+
+    //for testing purposes
+    console.log("Not reversed: " + formatedStr);
+
+    var reversed = formatedStr.map(function(x) {
+        return x;
+    }).reverse().join('');
+
+    //for testing purposes;
+    console.log("Reversed: " + reversed);
+    
+    if (formatedStr.join('') != reversed) {
+        return false;
+    }
+
+    return true;
+
 }
 
-//console.log(palindrome("eye"));
-console.log(newString);
+console.log(palindrome("A man, a plan, a canal. Panama"));
