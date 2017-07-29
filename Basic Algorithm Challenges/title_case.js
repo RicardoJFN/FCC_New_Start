@@ -14,17 +14,14 @@ String.prototype.split()
 
 function titleCase(str) {
     var formatedString = str.toLowerCase().split(' ');
-    var joinedString = formatedString.join(' ');
+    var final = [];
 
-    /**
-     * Reminder: In replace method put the first letter in every word 
-     * toUpperCase() in the first argument
-     */
-    var final = joinedString.replace(joinedString, function replaced(x) {
-        return x.toUpperCase();
-    });
-
-    return joinedString;
+    for (var i = 0; i != formatedString.length; i++) {
+        final.push(formatedString[i].replace(formatedString[i].charAt(0), function(x){
+            return x.toUpperCase();
+        }));
+    }
+    return final.join(' ');
 }
 
 console.log(titleCase("I'm a little tea pot"));
