@@ -1,0 +1,17 @@
+#center_slot {
+    background-color: #ffff99;
+    height: 450px;
+    width: 750px;
+    float: none;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+body {
+    background-image: url("https://wallpaperscraft.com/image/line_background_letters_surface_texture_50607_1920x1200.jpg");
+}
+
+p {
+    opacity: 1;
+    font-weight: bold;
+}
